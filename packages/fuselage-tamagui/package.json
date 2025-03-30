@@ -1,7 +1,6 @@
 {
   "name": "fuselage-tamagui",
   "private": true,
-  "type": "module",
   "packageManager": "yarn@4.5.0",
   "scripts": {
     "web": "yarn dev",
@@ -11,32 +10,22 @@
     "dev:webpack": "DISABLE_EXTRACTION=true NODE_ENV=development webpack serve",
     "dev:extract": "DISABLE_EXTRACTION=false NODE_ENV=development webpack serve",
     "prod": "NODE_ENV=production webpack --json=dist/compilation-stats.json",
-    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest"
   },
   "dependencies": {
-    "@tamagui/animations-css": "^1.125.22",
-    "@tamagui/config": "~1.125.22",
-    "@tamagui/core": "^1.125.22",
-    "@tamagui/create-theme": "^1.125.22",
-    "@tamagui/react-native-svg": "^1.125.22",
+    "@tamagui/animations-css": "^1.125.31",
+    "@tamagui/core": "^1.125.31",
+    "@tamagui/create-theme": "^1.125.31",
+    "@tamagui/react-native-svg": "^1.125.31",
     "expo-linear-gradient": "^12.7.2",
     "react": "*",
     "react-dom": "*",
-    "react-native-web": "^0.19.10"
+    "react-native-web": "^0.19.10",
+    "tamagui": "^1.125.31"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
-    "@storybook/addon-essentials": "^8.6.4",
-    "@storybook/addon-interactions": "^8.6.4",
-    "@storybook/addon-onboarding": "^8.6.4",
-    "@storybook/blocks": "^8.6.4",
-    "@storybook/react": "^8.6.4",
-    "@storybook/react-vite": "^8.6.4",
-    "@storybook/test": "^8.6.4",
-    "@tamagui/vite-plugin": "~1.125.22",
+    "@tamagui/vite-plugin": "^1.125.31",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "async-retry": "1.3.3",
     "babel-polyfill": "^6.26.0",
@@ -47,9 +36,8 @@
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.8.1",
     "react-refresh": "^0.14.0",
-    "storybook": "^8.6.4",
     "style-loader": "^3.3.4",
-    "tamagui-loader": "^1.125.22",
+    "tamagui-loader": "^1.125.31",
     "thread-loader": "^4.0.2",
     "url-loader": "^4.1.1",
     "vite": "^6.0.6",
@@ -57,8 +45,5 @@
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
-  },
-  "peerDependencies": {
-    "@tamagui/core": "*"
   }
 }
