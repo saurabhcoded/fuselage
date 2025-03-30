@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "",
+    "jsx": "react-jsx",
+    "types": ["node"],
+    "allowJs": true
+  },
+  "include": [
+    "../src/**/*.stories.ts",
+    "../src/**/*.stories.tsx",
+    "../src/**/*.stories.js",
+    "../src/**/*.stories.jsx",
+    "../src/**/*.stories.mdx",
+    "*.ts",
+    "*.tsx"
+  ],
+  "exclude": ["../**/*.test.ts", "../**/*.test.js"]
+}

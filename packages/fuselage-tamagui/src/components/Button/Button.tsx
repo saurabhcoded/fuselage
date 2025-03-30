@@ -70,7 +70,9 @@ export const ButtonText = styled(Text, {
   } as const,
 });
 
-const ButtonIcon = (props: { children: any }) => {
+const ButtonIcon = (props: {
+  children: React.ReactElement<{ size?: number; color?: string }>;
+}) => {
   const { size } = useContext(ButtonContext.context);
   const smaller = getSize(size, {
     shift: -2,

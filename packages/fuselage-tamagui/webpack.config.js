@@ -81,7 +81,7 @@ module.exports = {
   },
   plugins: [
     new TamaguiPlugin({
-      config: './src/tamagui.config.ts',
+      config: './tamagui.config.ts',
       components: ['tamagui'],
       importsWhitelist: ['constants.js'],
       disableExtraction,
@@ -111,4 +111,4 @@ module.exports = {
       template: `./index.html`,
     }),
   ].filter(Boolean),
-}
+};
